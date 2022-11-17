@@ -1,0 +1,90 @@
+
+body {
+    margin: auto;
+    background-color: rgb(233, 233, 233);
+}
+
+header {
+    text-align: center;
+    padding: 100px;
+    height: 100px;
+    background-color: rgb(144, 215, 208);
+    background-image: linear-gradient(to right, rgb(110, 229, 236) , rgb(229, 135, 165));
+}
+
+header h1 {
+    font-family: 'Chonburi', serif;
+    color: rgb(58, 58, 58);
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+
+/* nav bar  */
+nav {
+    margin: 0;
+    font-family: 'Mitr', serif;
+
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    text-transform: uppercase;
+} 
+nav ul li a {
+    display: block;
+    letter-spacing: 3px;
+    padding: 0.7em;
+    margin: 0.2em;
+}
+nav ul li a:link, nav ul li a:visited {
+    color: #79706a;
+    text-decoration: none;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
+    color: #2d2d2d;
+    text-decoration: underline red;
+    text-decoration-thickness: 2px;  
+    font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    nav ul li {
+        flex-wrap: wrap;
+	}
+}
+
+.diary {
+    font-family: 'Sarabun', serif;
+    margin: 1em;
+    width: 300px;
+    padding: 2em;
+    border: 20px;
+    border-color: black;
+    border-radius: 2em;
+    background-color: rgb(150, 199, 174);
+    box-shadow: 5px 5px 5px dimgrey;
+}   
+
+.diary p {
+    text-indent: 1em;
+}
+
+.flex {
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+aside {
+	float: right;
+	background-color: #F6F3ED;
+	padding: 1em;
+
+}
+
