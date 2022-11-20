@@ -1,15 +1,23 @@
-
-body {
-    margin: auto;
-    background-color: rgb(233, 233, 233);
+a {
+    text-decoration: none;
 }
 
+body {
+    background-color: #e9e7e1;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+}
+
+/* header */
 header {
+    margin: 0;
     text-align: center;
     padding: 100px;
     height: 100px;
     background-color: rgb(144, 215, 208);
-    background-image: linear-gradient(to right, rgb(110, 229, 236) , rgb(229, 135, 165));
+    background-image: linear-gradient(to right, rgb(207, 100, 100) , rgb(218, 173, 141),rgb(116, 82, 184));
 }
 
 header h1 {
@@ -24,7 +32,6 @@ header h1 {
 nav {
     margin: 0;
     font-family: 'Mitr', serif;
-
 }
 nav ul {
     list-style-type: none;
@@ -42,7 +49,6 @@ nav ul li a {
 }
 nav ul li a:link, nav ul li a:visited {
     color: #79706a;
-    text-decoration: none;
 }
 nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     color: #2d2d2d;
@@ -51,28 +57,84 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     font-weight: bold;
 }
 
-@media screen and (max-width: 425px) {
-    nav ul li {
-        flex-wrap: wrap;
-	}
+/* calendar */
+.calendar {
+    margin: 1em;
+    display: block;
+    text-align: left;
+    font-family: 'Mitr', serif;
+    color: #808080;
+}
+.calendar p {
+    padding: 2em;
+    width: 500px;
+    margin: auto;  
+}
+@media only screen and (min-width: 1024px) {
+    .calendar {
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    .calendar p {
+        padding: 2em;
+        width: 500px;
+        margin: 0;    
+    }
+    .calendar table {
+        margin: 0;
+    }
 }
 
-.diary {
+/* calendar table */
+table, tr, th, td {
+    border: 3px solid;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #F4F4F4;
+    width: 5em;
+}
+table {
+    width: 400px;
+    border: 3px outset;
+    margin: auto;
+}
+table a {
+    display: block;
+}
+tr td a:visited, tr td a:link {
+    color: #808080;
+}
+tr td a:hover ,tr td a:focus ,tr td a:active {
+    font-weight: bolder;
+    color: rgb(202, 25, 25);
+}
+
+/* diary */
+section {
     font-family: 'Sarabun', serif;
     margin: 1em;
-    width: 300px;
+    width: 20em;
+    height: fit-content;
     padding: 2em;
     border: 20px;
     border-color: black;
     border-radius: 2em;
     background-color: rgb(150, 199, 174);
     box-shadow: 5px 5px 5px dimgrey;
+    justify-content: center;
 }   
-
-.diary p {
+section p {
     text-indent: 1em;
 }
 
+ a:visited section, a:link section  {
+    color:#2d2d2d;
+}
+a:hover section ,a:focus section ,a:active section {
+    color: #706060;
+    background-color: rgb(178, 215, 199);
+}
 .flex {
     display: flex;
     flex: auto;
@@ -80,11 +142,3 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     justify-content: center;
 
 }
-
-aside {
-	float: right;
-	background-color: #F6F3ED;
-	padding: 1em;
-
-}
-
