@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Diary</title>
-    <link rel="stylesheet" href="/css/index_style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Mitr">
   <link rel="stylesheet"
@@ -14,12 +14,11 @@
   href="https://fonts.googleapis.com/css?family=Sarabun">
 </head>
 <body>
-    <nav>
+    <nav id="home">
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="">Diary</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">About Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#diary">Diary</a></li>
+            <li><a href="#aboutme">About Me</a></li>
         </ul>
     </nav>
 
@@ -27,7 +26,7 @@
         <h1>Welcome to my diary</h1>
     </header>
 
-    <div class="calendar">
+    <div class="calendar" >
         <table>
             <tr>
                 <th>Sun</th>
@@ -40,16 +39,25 @@
 
             </tr>
             <tr>
-                <td><a href="./page1/diary1.html">13</a></td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="./page1/diary1.html">12</a></td>
             </tr>
             <tr>
-                <td>20</td>
+                <td><a href="./page2/diary2.html">13</a></td>
+                <td><a href="./page3/diary3.html">14</a></td>
+                <td><a href="./page4/diary4.html">15</a></td>
+                <td><a href="./page5/diary5.html">16</a></td>
+                <td><a href="./page6/diary6.html">17</a></td>
+                <td><a href="./page7/diary7.html">18</a></td>
+                <td><a href="./page8/diary8.html">19</a></td>
+            </tr>
+            <tr>
+                <td><a href="./page9/diary9.html">20</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -58,64 +66,81 @@
                 <td></td>
             </tr>
        </table>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in numquam dolores quae fugiat assumenda excepturi tempora totam laudantium ducimus!</p>
+        <p>กดตามวันที่เพื่อดูไดอารี่ตามวันทางด้านซ้ายได้เลย หรือกดดูไดอารี่ตามรายการทางด้านล่าง</p>
     </div>
 
-    <div class="flex">
+    <div id="diary" class="flex" >
+        
         <a href="./page1/diary1.html">
             <section>
                 <h2>Diary 1 : โชคชะตาให้อยู่บ้าน</h2>
-                <p>นางสาวพิณงามกับวันหยุด แทนที่จะไปเที่ยวอย่างสนุกสนาน กลับมีบางสิ่งที่คาดไม่ถึง</p>
+                <p>วันหยุดแทนที่จะไปเที่ยวอย่างสนุกสนาน กลับได้แต่อยู่ในบ้าน</p>
             </section>
         </a>
 
-        <section>
-            <h2>Diary 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt?</p>
-            <a href="">Page 2</a>
-        </section>
+        <a href="./page2/diary2.html">
+            <section>
+                <h2>Diary 2 : เติมเงินระวังนะ</h2>
+                <p>เวลาจะทำรายการเติมเงินอะไรต้องระวังนะ ดูให้ดีๆ</p>
+            </section>
+        </a>
 
-        <section>
-            <h2>Diary 3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, fuga!</p>
-            <a href="">Page 3</a>
-        </section>
+        <a href="./page3/diary3.html">
+            <section>
+                <h2>Diary 3 : แม่มดน้อยกิกิ</h2>
+                <p>ตอนไปงานหนังสือซื้อหนังสือมาเล่มนึง จะลองอธิบายความรู้สึกที่อ่านให้ดู</p>
+            </section>
+        </a>
 
-        <section>
-            <h2>Diary 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, modi.</p>
-            <a href="">Page 1</a>
-        </section>
+        <a href="./page4/diary4.html">
+            <section>
+                <h2>Diary 4 : คู่มือการเป็นอัศวิน</h2>
+                <p>รีวิวหนังสือเล่มหนึ่งกล่าวถึงวิธีการเป็นอัศวินยุคกลาง</p>
+            </section>
+        </a>
 
-        <section>
-            <h2>Diary 5</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, reiciendis.</p>
-            <a href="">Page 1</a>
-        </section>
+        <a href="./page5/diary5.html">
+            <section>
+                <h2>Diary 5 : รีแอครีใจ</h2>
+                <p>ช่วงเรียนรู้และลองใช้ React ทำเว็บจากรุ่นพี่ในคณะ</p>
+            </section>
+        </a>
 
-        <section>
-            <h2>Diary 6</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, sed?</p>
-            <a href="">Page 1</a>
-        </section>
+        <a href="./page6/diary6.html">
+            <section>
+                <h2>Diary 6 : โดนสัมภาษณ์</h2>
+                <p>แปลว่าเพื่อนที่ไม่เข้าใจ แต่ถามจนรู้สึกเหมือนโดนสัมภาษณ์</p>
+            </section>
+        </a>
 
-        <section>
-            <h2>Diary 7</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, corrupti.</p>
-            <a href="">Page 1</a>
-        </section>
+        <a href="./page7/diary7.html">
+            <section>
+                <h2>Diary 7 : ฟิลเตอร์กลุ่ม</h2>
+                <p>อย่าใช้ฟิลเตอร์กลุ่มเลยแฮร์รี่ ใช้ฟิลเตอร์เดี่ยวเถอะ</p>
+            </section>
+        </a>
+        <a href="./page8/diary8.html">
+            <section>
+                <h2>Diary 8 : คริสต์มาสเนื้อกระทะ</h2>
+                <p>วันที่ออกข้างนอก กินหมูกระทะที่เป็นเนื้อกระทะมากกว่า</p>
+            </section>
+        </a>
+        <a href="./page9/diary9.html">
+            <section>
+                <h2>Diary 9 : อยากซื้อหนังสือแต่</h2>
+                <p>มีลิสต์ซื้อหนังสืออยู่มากมายแต่ราคาหนังสือเดี๋ยวนี้แรงไปมาก</p>
+            </section>
+        </a>
+    </div>
 
-        <section>
-            <h2>Diary 8</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, impedit.</p>
-            <a href="">Page 1</a>
-        </section>
-
-        <section>
-            <h2>Diary 9</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, in.</p>
-            <a href="">Page 1</a>
-        </section>
+    <div id="aboutme" class="myself">
+        <img src="./image/Pin.jpg" alt="pinngam">
+        <ul>
+            <h2>นางสาวพิณงาม สมบัติศรี</h2>
+            <li>รหัสนักศึกษา: 65130500051</li>
+            <li>เบอร์โทร: 097-975-2443</li>
+            <li>line id: pinny_2103 </li>
+        </ul>
     </div>
 
 

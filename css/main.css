@@ -8,6 +8,7 @@ body {
     padding: 0;
     display: block;
     justify-content: center;
+    color: rgb(58, 58, 58);
 }
 
 /* header */
@@ -16,11 +17,11 @@ header {
     text-align: center;
     padding: 100px;
     height: 100px;
-    background-color: rgb(144, 215, 208);
-    background-image: linear-gradient(to right, rgb(207, 100, 100) , rgb(218, 173, 141),rgb(116, 82, 184));
+    background-image: linear-gradient(to right, rgb(147, 125, 99) , rgb(208, 154, 144),rgb(243, 198, 135));
 }
 
 header h1 {
+    margin: 0;
     font-family: 'Chonburi', serif;
     color: rgb(58, 58, 58);
     letter-spacing: 2px;
@@ -37,12 +38,10 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    padding-left: 0;
 }
 nav ul li {
     text-transform: uppercase;
-} 
-nav ul li a {
-    display: block;
     letter-spacing: 3px;
     padding: 0.7em;
     margin: 0.2em;
@@ -62,13 +61,17 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     margin: 1em;
     display: block;
     text-align: left;
-    font-family: 'Mitr', serif;
-    color: #808080;
+    font-family: 'Chonburi', serif;
+    color: rgb(58, 58, 58);
 }
 .calendar p {
+    font-family: 'Mitr', serif;
+    font-size: large;
     padding: 2em;
-    width: 500px;
+    width: 400px;
     margin: auto;  
+    text-indent: 1em;
+    color: #957a68;
 }
 @media only screen and (min-width: 1024px) {
     .calendar {
@@ -78,7 +81,7 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     }
     .calendar p {
         padding: 2em;
-        width: 500px;
+        width: 400px;
         margin: 0;    
     }
     .calendar table {
@@ -88,40 +91,42 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
 
 /* calendar table */
 table, tr, th, td {
-    border: 3px solid;
+    border: 1px solid;
     text-align: center;
     text-transform: uppercase;
-    background-color: #F4F4F4;
-    width: 5em;
+    background-color: #fefefe;
+    color: rgb(58, 58, 58);
+    width: fit-content;
+    padding: 4px;
 }
 table {
-    width: 400px;
-    border: 3px outset;
+    border-collapse: collapse;
+    border: #2d2d2d solid;
+    width: 480px;
+    height: 180px;
     margin: auto;
 }
 table a {
     display: block;
 }
 tr td a:visited, tr td a:link {
-    color: #808080;
+    color: #6b6b6b;
 }
 tr td a:hover ,tr td a:focus ,tr td a:active {
-    font-weight: bolder;
-    color: rgb(202, 25, 25);
+    font-weight: 900;
+    color: rgb(58, 58, 58);
 }
 
 /* diary */
 section {
     font-family: 'Sarabun', serif;
     margin: 1em;
+    padding: 2em;
     width: 20em;
     height: fit-content;
-    padding: 2em;
-    border: 20px;
-    border-color: black;
+    border: 2px solid rgb(85, 85, 85);
     border-radius: 2em;
-    background-color: rgb(150, 199, 174);
-    box-shadow: 5px 5px 5px dimgrey;
+    background-image: url("../image/diary-bg.jpg");
     justify-content: center;
 }   
 section p {
@@ -129,16 +134,32 @@ section p {
 }
 
  a:visited section, a:link section  {
-    color:#2d2d2d;
+    color: rgb(58, 58, 58);
+    box-shadow: 5px 10px 5px rgb(142, 142, 142);
 }
 a:hover section ,a:focus section ,a:active section {
-    color: #706060;
-    background-color: rgb(178, 215, 199);
+    box-shadow: 5px 10px 5px rgb(85, 85, 85);
 }
 .flex {
+    padding: 2em;
     display: flex;
     flex: auto;
     flex-flow: row wrap;
     justify-content: center;
+}
 
+/* about me */
+.myself{
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Mitr', serif;
+    background-color: rgb(145, 131, 110);
+}
+.myself img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
 }

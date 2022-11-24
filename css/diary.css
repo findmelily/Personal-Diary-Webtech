@@ -1,0 +1,63 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e9e7e1;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+}
+
+
+/* diary */
+section {
+    font-family: 'Sarabun', serif;
+    margin: 1em;
+    padding: 4em;
+    width: 50em;
+    height: fit-content;
+    border-radius: 2em;
+    background-image: url("../image/diary-bg.jpg");
+    background-repeat: repeat;
+    box-shadow: 5px 5px 5px dimgrey;
+}   
+section h2 {
+    text-align: center;
+}
+
+section p {
+    text-indent: 1em;
+    line-height: 1.7;
+
+}
+
+section img {
+    border: 5px solid rgb(252, 252, 252);
+    border-radius: 4px;
+    margin: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* button */
+.button a:link, .button a:visited {
+    background-color: #f1f1f1;
+    color: #2d2d2d;
+    font-family: 'Chonburi', serif;
+    padding: 0.5em;
+    border-radius: 10em;
+}
+.button a:hover,.button a:focus, .button a:active {
+    background-color: rgb(176, 176, 176);
+    color: white;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
+}
