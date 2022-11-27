@@ -6,53 +6,68 @@ body {
     background-color: #e9e7e1;
     margin: 0;
     padding: 0;
-    display: block;
-    justify-content: center;
     color: rgb(58, 58, 58);
 }
 
 /* header */
 header {
+
+    color: rgb(58, 58, 58);
     margin: 0;
     text-align: center;
-    padding: 100px;
-    height: 100px;
-    background-image: linear-gradient(to right, rgb(147, 125, 99) , rgb(208, 154, 144),rgb(243, 198, 135));
+    padding: 150px;
+    height: fit-content;
+    width: auto;
+    background-image: linear-gradient(to right ,#d08e7199, #f1daba);
+    background-color: #d08e7199;
 }
 
 header h1 {
-    margin: 0;
-    font-family: 'Chonburi', serif;
-    color: rgb(58, 58, 58);
+    font-family: 'Lobster', Chonburi;
+    margin-top: 100px;
     letter-spacing: 2px;
     font-size: 3em;
+}
+
+header p {
+    font-size: 1em;
+    font-family: 'Sarabun', Chonburi;
 }
 
 
 /* nav bar  */
 nav {
-    margin: 0;
+    background-color: rgb(233, 231, 225, 0.9);
+    width: 100%;
     font-family: 'Mitr', serif;
+    position: fixed;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     padding-left: 0;
 }
+
 nav ul li {
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 0.7em;
     margin: 0.2em;
 }
-nav ul li a:link, nav ul li a:visited {
+
+nav ul li a:link,
+nav ul li a:visited {
     color: #79706a;
 }
-nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
+
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
     color: #2d2d2d;
     text-decoration: underline red;
-    text-decoration-thickness: 2px;  
+    text-decoration-thickness: 2px;
     font-weight: bold;
 }
 
@@ -64,33 +79,22 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active{
     font-family: 'Chonburi', serif;
     color: rgb(58, 58, 58);
 }
+
 .calendar p {
     font-family: 'Mitr', serif;
     font-size: large;
     padding: 2em;
     width: 400px;
-    margin: auto;  
+    margin: auto;
     text-indent: 1em;
     color: #957a68;
 }
-@media only screen and (min-width: 1024px) {
-    .calendar {
-        margin: 2em;
-        display: flex;
-        justify-content: center;
-    }
-    .calendar p {
-        padding: 2em;
-        width: 400px;
-        margin: 0;    
-    }
-    .calendar table {
-        margin: 0;
-    }
-}
 
 /* calendar table */
-table, tr, th, td {
+table,
+tr,
+th,
+td {
     border: 1px solid;
     text-align: center;
     text-transform: uppercase;
@@ -99,6 +103,7 @@ table, tr, th, td {
     width: fit-content;
     padding: 4px;
 }
+
 table {
     border-collapse: collapse;
     border: #2d2d2d solid;
@@ -106,18 +111,32 @@ table {
     height: 180px;
     margin: auto;
 }
+
 table a {
     display: block;
 }
-tr td a:visited, tr td a:link {
+
+tr td a:visited,
+tr td a:link {
     color: #6b6b6b;
 }
-tr td a:hover ,tr td a:focus ,tr td a:active {
+
+tr td a:hover,
+tr td a:focus,
+tr td a:active {
     font-weight: 900;
     color: rgb(58, 58, 58);
 }
 
 /* diary */
+.flex {
+    padding: 2em;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 section {
     font-family: 'Sarabun', serif;
     margin: 1em;
@@ -127,39 +146,125 @@ section {
     border: 2px solid rgb(85, 85, 85);
     border-radius: 2em;
     background-image: url("../image/diary-bg.jpg");
-    justify-content: center;
-}   
+}
+
 section p {
     text-indent: 1em;
 }
 
- a:visited section, a:link section  {
+a:visited section,
+a:link section {
     color: rgb(58, 58, 58);
     box-shadow: 5px 10px 5px rgb(142, 142, 142);
 }
-a:hover section ,a:focus section ,a:active section {
+
+a:hover section,
+a:focus section,
+a:active section {
     box-shadow: 5px 10px 5px rgb(85, 85, 85);
 }
-.flex {
-    padding: 2em;
-    display: flex;
-    flex: auto;
-    flex-flow: row wrap;
-    justify-content: center;
-}
+
+
 
 /* about me */
-.myself{
+.myself {
     display: flex;
     flex: auto;
     flex-flow: row wrap;
     justify-content: center;
     padding: 20px;
     font-family: 'Mitr', serif;
-    background-color: rgb(145, 131, 110);
+    background-color: rgb(145, 131, 110, 0.8);
 }
-.myself img{
+
+.myself img {
     width: 200px;
     height: 200px;
     border-radius: 10em;
+}
+
+.myself h2 {
+    font-size: larger;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .calendar {
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .calendar p {
+        padding: 2em;
+        width: 400px;
+        margin: 0;
+    }
+
+    .calendar table {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 385px) and (max-width: 500px) {
+
+
+    .calendar table {
+        width: fit-content;
+        overflow-x: auto;
+    }
+
+    .calendar p {
+        width: fit-content;
+    }
+
+    header {
+        object-fit: cover;
+        padding: 50px;
+    }
+
+    header h1 {
+        margin-top: 70px;
+        font-size: 50px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    .calendar {
+        display: none;
+    }
+
+    section {
+        width: fit-content;
+        font-size: small;
+    }
+
+
+    header {
+        object-fit: cover;
+        padding: 50px;
+    }
+
+    header h1 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav ul {
+        justify-content: center;
+        font-size: small;
+    }
+
+
+
 }

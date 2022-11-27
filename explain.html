@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary 8</title>
+    <link rel="stylesheet" href="./css/explain.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="cssinfo">
+        <section>
+            <h2>อธิบายโค้ด</h2>
+            <h3>CSS gradient</h3>
+            <p>
+                เป็นโค้ดที่เอาไว้เป็นแบ็คกราว header และไล่สี ต้องมีสองสีเป็นอย่างต่ำมีอยู่สามแบบ
+            </p>
+            <img src="./image/gradient-explain.png" width="400px">
+            <h4>อ้างอิง: <a href="https://www.youtube.com/watch?v=CoTPsy2GUBE&ab_channel=CodingArtist">https://www.youtube.com/</a></h4>
+            <ul>
+                <li>Linear Gradients (การไล่สีที่เป็นขึ้น,ลง,ซ้าย,ขวาและแนวทแยงมุมได้)</li>
+                <p>Syntax: <code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code></p>
+
+                <li>Radial Gradients (การไล่สีเริ่มที่ตรงกลาง เป็นได้ทั้งทรงกลมหรือวงรี)</li>
+                <p>Syntax: <code>background-image: radial-gradient(shape, color-stop1, color-stop2, ...);</code></p>
+                <li>Conic Gradients (เป็นการไล่สีที่หมุนวนตรงกลาง สามารถปรับองศาได้)</li>
+                <p>Syntax:
+                    <code>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</code>
+                </p>
+            </ul>
+
+            <h3>CSS box-shadow</h3>
+            <p>
+                เป็นโค้ดที่เอาไว้ทำเงาตรงกล่องไดอารี่ที่ทำ
+            </p>
+            <p>Syntax: <code>box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;</code></p>
+            <ul>
+                <li>none: ไม่ปรากฏเงา</li>
+                <li>ประเภทที่ใช้ร่วมกัน</li>
+                <ol>
+                    <li>h-offset: เคลื่อนเงาไปทางขวากล่อง</li>
+                    <li>v-offset: เคลื่อนเงาไปข้างล่างกล่อง</li>
+                    <li>blur: ทำให้จาง</li>
+                    <li>blur: ทำให้กระจาย</li>
+                    <li>color: สีของเงา</li>
+                </ol>
+                <li>inset: เปลี่ยนเงาด้านนอกกล่องเป็นด้านในกล่อง</li>
+                <li>initial: จะเป็นการเซท default</li>
+                <li>inherit: ถ้าตามหลัง property ตัวไหน มันก็จะสืบทอดค่ามา</li>
+
+            </ul>
+
+            <h4>อ้างอิง: <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.php" target="_blank">https://www.w3schools.com/</a></h4>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
