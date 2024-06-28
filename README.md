@@ -1,2 +1,2 @@
 # Personal-Diary-Webtech
-Personal Project
+Personal Project made with HTML / CSS
